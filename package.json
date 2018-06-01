@@ -4,7 +4,10 @@
   "description": "Pluralsight course",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set DEBUG=app & nodemon app.js",
+    "lint": "eslint app.js",
+    "fix": "eslint app.js --fix"
   },
   "repository": {
     "type": "git",
@@ -15,7 +18,8 @@
   "bugs": {
     "url": "https://github.com/tomasz-konecki/node.js_building_web_app/issues"
   },
-  "homepage": "https://github.com/tomasz-konecki/node.js_building_web_app#readme",
+  "homepage":
+    "https://github.com/tomasz-konecki/node.js_building_web_app#readme",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "chalk": "^2.4.1",
@@ -24,5 +28,17 @@
     "jquery": "^3.3.1",
     "morgan": "^1.9.0",
     "popper": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
+  },
+  "nodemonConfig": {
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
   }
 }
