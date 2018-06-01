@@ -18,7 +18,8 @@
   "bugs": {
     "url": "https://github.com/tomasz-konecki/node.js_building_web_app/issues"
   },
-  "homepage": "https://github.com/tomasz-konecki/node.js_building_web_app#readme",
+  "homepage":
+    "https://github.com/tomasz-konecki/node.js_building_web_app#readme",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "chalk": "^2.4.1",
@@ -36,7 +37,7 @@
     "eslint-plugin-import": "^2.12.0"
   },
   "nodemonConfig": {
-    "delay": "2500",
+    "delay": "1500",
     "env": {
       "NODE_ENV": "development",
       "PORT": 4000
