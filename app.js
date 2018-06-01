@@ -23,10 +23,10 @@ app.use(
 );
 
 app.set("views", "./src/views");
-app.set("view engine", "pug");
+app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  res.render("index", { list: ["a", "b"] });
+  res.render("index", { title: "The Library", list: ["a", "b"] });
 
   // res.sendFile(path.join(__dirname, "views/index.html"));
   // this also works:
