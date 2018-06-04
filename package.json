@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "set DEBUG=app:* & nodemon app.js",
+    "start": "set DEBUG=app,app:* & nodemon app.js",
     "lint": "eslint app.js",
     "fix": "eslint app.js --fix"
   },
@@ -18,8 +18,7 @@
   "bugs": {
     "url": "https://github.com/tomasz-konecki/node.js_building_web_app/issues"
   },
-  "homepage":
-    "https://github.com/tomasz-konecki/node.js_building_web_app#readme",
+  "homepage": "https://github.com/tomasz-konecki/node.js_building_web_app#readme",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "chalk": "^2.4.1",
